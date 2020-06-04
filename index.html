@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="smallstyle.css" />
+    <link rel="stylesheet" href="mediumstyle.css" />
+    <link rel="stylesheet" href="largestyle.css" />
+    <title>Daily Toulouse</title>
+    <title>title</title>
+    <script
+      src="https://kit.fontawesome.com/f0ba7bc94b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f0ba7bc94b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="vierge">
+    <header>
+      <nav class="navbar">
+        <div class="boutton-menu">
+          <label for="menu-box" id="bouttonMenu">
+            <img class="burger" src="img/burger.png" alt="burger" />
+          </label>
+          <img src="img/logo.jpg" alt="logo" />
+        </div>
+        <div class="titrepage">
+          <h1 class="titrepagesmall">DT</h1>
+          <h1 class="titrepagelarge">
+            <span class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters">DAILY TOULOUSE</span>
+              <span class="line line2"></span>
+            </span>
+          </h1>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        </div>
+        <div class="recherche-profil">
+          <div class="recherche-box">
+            <input
+              type="text"
+              placeholder="recherche..."
+              id="search"
+              class="recherche-txt"
+            />
+            <a href="#" class="search recherche-btn">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <button data-modal-target="#modal">
+            <img class="avatar" src="https://i.pravatar.cc/300" alt="avatar" />
+          </button>
+        </div>
+      </nav>
+      <div class="timer">
+        <span id="dateFr"></span> <span id="horloge"></span>
+      </div>
+    </header>
+
+    <div class="modal" id="modal">
+      <div class="modal-body">
+        <div class="card-container">
+          <div class="upper-container">
+            <button data-close-button class="close-button">&times;</button>
+            <div class="image-container">
+              <img src="img/profil.jpg" />
+            </div>
+          </div>
+          <div class="lower-container">
+            <div>
+              <h3>Leon LePro</h3>
+              <h4>Développeur d'applications web!</h4>
+            </div>
+            <div>
+              <p>
+                Vous accompagne et élabore le développement de votre
+                application, depuis sa conception jusqu’à sa mise en ligne.
+              </p>
+            </div>
+            <div>
+              <a href="#" class="btn">Détails du profil</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+    <section>
+      <template id="article-template">
+        <a href="" class="articleLink">
+          <article class="Article">
+            <h2 class="articleTitle"></h2>
+            <div class="contentImgAndTextArticle">
+              <img src="" alt="" class="imgArticle" />
+              <p class="textArticle"></p>
+              <p class="textleft"></p>
+            </div>
+            <div class="AuthorAndDate">
+              <em></em>
+            </div>
+          </article>
+          <hr class="articleDivision" />
+        </a>
+      </template>
+    </section>
+    <section class="feed" id="parentElement">
+      <a
+        href=""
+        class="articleLink"
+        data-big-category="Lifestyle"
+        data-sub-category="Gastronomie"
+      >
+        <article class="Article">
+          <h2 class="articleTitle">
+            De nouveaux cafés et salons de thés insolites à Toulouse
+          </h2>
+          <div class="contentImgAndTextArticle">
+            <img
+              class="imgArticle"
+              src="https://cdn.pixabay.com/photo/2016/11/18/14/05/brick-wall-1834784_960_720.jpg"
+              alt="image d'un café restaurant"
+            />
+            <p class="textArticle">
+              Fini le vieux café de papi, Toulouse fait place à de nouveaux
+              cafés et salons de thé conceptuels. Du café proposant à ses
+              clients une expérience de réalité virtuelleau salon de thé offrant
+              des cours de jardinerie, les Toulousains nemanquent pas de choix
+            </p>
+            <p class="textleft">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              temporibus numquam reiciendis! Optio officiis rerum quae accusamus
+              dolorum assumenda non cumque, dolore nihil deleniti porro, commodi
+              praesentium, consequuntur doloribus maiores! Lorem ipsum dolor sit
+              amet consectetur, adipisicing elit. Voluptatibus cum nam dolor
+              officia quos dolorum commodi ratione velit eius deleniti.
+              Assumenda excepturi facilis debitis perferendis quasi dolores
+              placeat ipsum est Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Error minus consectetur necessitatibus
+              blanditiis, vitae autem harum excepturi veniam facilis explicabo
+              neque voluptatem quibusdam incidunt reiciendis! Asperiores ducimus
+              porro quis excepturi!
+            </p>
+          </div>
+          <div class="AuthorAndDate">
+            <em>Erwan | le 1er Mars 2020</em>
+          </div>
+        </article>
+        <hr class="articleDivision" />
+      </a>
+
+      <a
+        href=""
+        class="articleLink"
+        data-big-category="Voyage"
+        data-sub-category="Bon-plan-Europe"
+      >
+        <article class="Article">
+          <h2 class="articleTitle">Le low cost...toujours plus loin !</h2>
+          <div class="contentImgAndTextArticle">
+            <img
+              class="imgArticle"
+              src="https://cdn.pixabay.com/photo/2012/06/28/08/26/plane-50893_960_720.jpg "
+              width="300"
+              alt="image d'un avion"
+            />
+            <p class="textArticle">
+              Les compagnies dites "lowcost" telles que RyanAir, Easyjet ou
+              encore Volotea, ouvrent de nouvelles lignes à destination des
+              capitales européennes. A cet effet, les compagnies aériennes ont
+              mis en ligne des billets à prix cassé. Cette démarche entre dans
+              une stratégie commerciale visant à promouvoir...
+            </p>
+            <p class="textleft">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              temporibus numquam reiciendis! Optio officiis rerum quae accusamus
+              dolorum assumenda non cumque, dolore nihil deleniti porro, commodi
+              praesentium, consequuntur doloribus maiores! Lorem ipsum dolor sit
+              amet consectetur, adipisicing elit. Voluptatibus cum nam dolor
+              officia quos dolorum commodi ratione velit eius deleniti.
+              Assumenda excepturi facilis debitis perferendis quasi dolores
+              placeat ipsum est Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Error minus consectetur necessitatibus
+              blanditiis, vitae autem harum excepturi veniam facilis explicabo
+              neque voluptatem quibusdam incidunt reiciendis! Asperiores ducimus
+              porro quis excepturi!
+            </p>
+          </div>
+          <div class="AuthorAndDate">
+            <em>Erwan | le 1er Mars 2020</em>
+          </div>
+        </article>
+        <hr class="articleDivision" />
+      </a>
+
+      <a
+        href=""
+        class="articleLink"
+        data-big-category="Société"
+        data-sub-category="Economie"
+      >
+        <article class="Article">
+          <h2 class="articleTitle">
+            CORONAVIRUS: le monde au bord de la crise financière
+          </h2>
+          <div class="contentImgAndTextArticle">
+            <img
+              class="imgArticle"
+              src="https://cdn.pixabay.com/photo/2016/11/27/21/42/stock-1863880_960_720.jpg"
+              width="300"
+              alt="image d'un moniteur"
+            />
+            <p class="textArticle">
+              Suite à l'épidémie du coronavirus, les marchés financiers ont subi
+              leur pire chute depuis 2008. Les restrictions, prises en raison de
+              la propagation du virus, paralysent l'Economie mondiale et placent
+              les investisseurs dans une grande incertitude...
+            </p>
+            <p class="textleft">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              temporibus numquam reiciendis! Optio officiis rerum quae accusamus
+              dolorum assumenda non cumque, dolore nihil deleniti porro, commodi
+              praesentium, consequuntur doloribus maiores! Lorem ipsum dolor sit
+              amet consectetur, adipisicing elit. Voluptatibus cum nam dolor
+              officia quos dolorum commodi ratione velit eius deleniti.
+              Assumenda excepturi facilis debitis perferendis quasi dolores
+              placeat ipsum est Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Error minus consectetur necessitatibus
+              blanditiis, vitae autem harum excepturi veniam facilis explicabo
+              neque voluptatem quibusdam incidunt reiciendis! Asperiores ducimus
+              porro quis excepturi!
+            </p>
+          </div>
+          <div class="AuthorAndDate">
+            <em>Erwan | le 1er Mars 2020</em>
+          </div>
+        </article>
+        <hr class="articleDivision" />
+      </a>
+
+      <a
+        href=""
+        class="articleLink"
+        data-big-category="Société"
+        data-sub-category="Justice"
+      >
+        <article class="Article" class="articleLink">
+          <h2 class="articleTitle">
+            Saint Valentin: La lettre d'amour des avocats à l'attention de la
+            Justice
+          </h2>
+          <div class="contentImgAndTextArticle">
+            <img
+              class="imgArticle"
+              src="https://cdn.pixabay.com/photo/2017/02/12/14/00/justice-2060093_960_720.jpg"
+              width="300"
+              alt="image de la justice"
+            />
+            <p class="textArticle">
+              Les avocats en grève depuis maintenant six semaines ont produit
+              une lettre d'amour adressée à la justice à l'occasion de la Saint
+              Valentin. le bâtonnier du barreau de toulouse s'est exprimé à ce
+              sujet: << Cette lettre a pour but de rappeler l'engagement de
+              l'ensemble des avocats...>>
+            </p>
+            <p class="textleft">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              temporibus numquam reiciendis! Optio officiis rerum quae accusamus
+              dolorum assumenda non cumque, dolore nihil deleniti porro, commodi
+              praesentium, consequuntur doloribus maiores! Lorem ipsum dolor sit
+              amet consectetur, adipisicing elit. Voluptatibus cum nam dolor
+              officia quos dolorum commodi ratione velit eius deleniti.
+              Assumenda excepturi facilis debitis perferendis quasi dolores
+              placeat ipsum est Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Error minus consectetur necessitatibus
+              blanditiis, vitae autem harum excepturi veniam facilis explicabo
+              neque voluptatem quibusdam incidunt reiciendis! Asperiores ducimus
+              porro quis excepturi!
+            </p>
+          </div>
+          <div class="AuthorAndDate">
+            <em>Erwan | le 1er Mars 2020</em>
+          </div>
+        </article>
+        <hr class="articleDivision" />
+      </a>
+
+      <a
+        href=""
+        class="articleLink"
+        data-big-category="Sport"
+        data-sub-category="Rugby"
+      >
+        <article class="Article">
+          <h2 class="articleTitle">
+            Tournoi des six nations 2020: un succès en demi teinte pour le XV de
+            France
+          </h2>
+          <div class="contentImgAndTextArticle">
+            <img
+              class="imgArticle"
+              src="https://cdn.pixabay.com/photo/2018/10/02/12/47/rugby-3718779_960_720.jpg"
+              width="300"
+              alt="image de rugby"
+            />
+            <p class="textArticle">
+              En raison de l'épidémie de coronavirus, le tournoi des 6 nations a
+              été reporté, couronnant de succès l'épopée hivernale du XV de
+              France. Ce succès est toutefois entâché de quelques déceptions
+              notamment au sein du groupe france. En effet, des problèmes de
+              discipline ont été raportés par...
+              <span class="textLeft"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                temporibus numquam reiciendis! Optio officiis rerum quae
+                accusamus dolorum assumenda non cumque, dolore nihil deleniti
+                porro, commodi praesentium, consequuntur doloribus maiores!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus cum nam dolor officia quos dolorum commodi ratione
+                velit eius deleniti. Assumenda excepturi facilis debitis
+                perferendis quasi dolores placeat ipsum est Lorem ipsum dolor
+                sit amet, consectetur adipisicing elit. Error minus consectetur
+                necessitatibus blanditiis, vitae autem harum excepturi veniam
+                facilis explicabo neque voluptatem quibusdam incidunt
+                reiciendis! Asperiores ducimus porro quis excepturi!</span
+              >
+            </p>
+            <p class="textleft">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              temporibus numquam reiciendis! Optio officiis rerum quae accusamus
+              dolorum assumenda non cumque, dolore nihil deleniti porro, commodi
+              praesentium, consequuntur doloribus maiores! Lorem ipsum dolor sit
+              amet consectetur, adipisicing elit. Voluptatibus cum nam dolor
+              officia quos dolorum commodi ratione velit eius deleniti.
+              Assumenda excepturi facilis debitis perferendis quasi dolores
+              placeat ipsum est Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Error minus consectetur necessitatibus
+              blanditiis, vitae autem harum excepturi veniam facilis explicabo
+              neque voluptatem quibusdam incidunt reiciendis! Asperiores ducimus
+              porro quis excepturi!
+            </p>
+          </div>
+          <div class="AuthorAndDate">
+            <em>Erwan | le 1er Mars 2020</em>
+          </div>
+        </article>
+        <hr class="articleDivision" />
+      </a>
+
+      <a
+        href="article.html"
+        class="articleLink"
+        data-big-category="Société"
+        data-sub-category="Economie"
+      >
+        <article class="Article">
+          <h2 class="articleTitle">
+            Développer son patrimoine financier grâce à l’immobilier
+          </h2>
+          <div class="contentImgAndTextArticle">
+            <img
+              class="imgArticle"
+              src="https://cdn.pixabay.com/photo/2016/04/25/23/30/home-1353389_960_720.jpg"
+              width="300"
+              alt="image maison"
+            />
+            <p class="textArticle">
+              Le Bâtiment, domaine très prometteur dans un monde où la
+              population mondiale augmente considérablement à 9 chiffres chaque
+              décennie, font l’objet de plusieurs demandes surtout en matière de
+              logements qui deviennent de plus en plus imposantes...
+              <span class="textLeft"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                temporibus numquam reiciendis! Optio officiis rerum quae
+                accusamus dolorum assumenda non cumque, dolore nihil deleniti
+                porro, commodi praesentium, consequuntur doloribus maiores!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus cum nam dolor officia quos dolorum commodi ratione
+                velit eius deleniti. Assumenda excepturi facilis debitis
+                perferendis quasi dolores placeat ipsum est Lorem ipsum dolor
+                sit amet, consectetur adipisicing elit. Error minus consectetur
+                necessitatibus blanditiis, vitae autem harum excepturi veniam
+                facilis explicabo neque voluptatem quibusdam incidunt
+                reiciendis! Asperiores ducimus porro quis excepturi!</span
+              >
+            </p>
+          </div>
+          <div class="AuthorAndDate">
+            <em>Amine | le 1er Mars 2020</em>
+          </div>
+        </article>
+      </a>
+    </section>
+    <section class="section-menu">
+      <input type="checkbox" id="menu-box" />
+      <ul class="menu">
+        <li><a href="" class="grostitre">A la une</a></li>
+        <li>
+          <a class="grostitre" id="titreSociete">Société</a>
+          <ul class="sous-titre" id="sous-titre-societe">
+            <li>
+              <a id="sous-titre-economie">Economie</a>
+              >
+            </li>
+            <li>
+              <a id="sous-titre-education">Education</a>
+            </li>
+            <li>
+              <a id="sous-titre-sante">Santé</a>
+            </li>
+            <li>
+              <a id="sous-titre-justice">Justice</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="grostitre" id="titreSport">Sport</a>
+          <ul class="sous-titre" id="sous-titre-sport">
+            <li>
+              <a id="sous-titre-rugby">Rugby</a>
+            </li>
+            <li>
+              <a id="sous-titre-football">Football</a>
+            </li>
+            <li>
+              <a id="sous-titre-sport-outdoor">Sport-Outdoor</a>
+            </li>
+            <li>
+              <a id="sous-titre-sport-urbain">Sport-Urbain</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="grostitre" id="titreLifestyle">Lifestyle</a>
+          <ul class="sous-titre" id="sous-titre-lifestyle">
+            <li>
+              <a id="sous-titre-gastronomie">Gastronomie</a>
+            </li>
+            <li>
+              <a id="sous-titre-representation-culturel"
+                >Représentation culturel</a
+              >
+            </li>
+            <li>
+              <a id="sous-titre-mode">Mode</a>
+            </li>
+            <li>
+              <a id="sous-titre-evenement">Evènement</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="grostitre" id="titreVoyage">Voyage</a>
+          <ul class="sous-titre" id="sous-titre-voyage">
+            <li>
+              <a id="sous-titre-bon-plan-europe">Bon plan Europe</a>
+            </li>
+            <li>
+              <a id="sous-titre-bon-plan-amerique">Bon plan Amérique</a>
+            </li>
+            <li>
+              <a id="sous-titre-bon-plan-asie">Bon plan Asie</a>
+            </li>
+            <li>
+              <a id="sous-titre-bon-plan-afrique">Bon plan Afrique</a>
+            </li>
+            <li>
+              <a id="sous-titre-bon-plan-oceanie">Bon plan Océanie</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="footer-flex-menu">
+            <ul>
+              <li><a href="">Qui sommes nous</a></li>
+              <li><a href="reelcontact.html">Nous contacter</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Recrutement</a></li>
+              <li><a href="">Mentions légale</a></li>
+              <li>
+                <a href="">Faire un don</a>
+              </li>
+              <li class="flex-rejoindre">
+                <p>Rejoignez-nous !</p>
+                <a href=""
+                  ><img src="img/logofacebook.png" alt="Liens Facebook"
+                /></a>
+                <img src="img/logotwitter.png" alt="Liens twitter" />
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="backOffice">
+      <fieldset class="champs">
+        <legend>Publication</legend>
+        <label for="Titre">Titre de l'article</label>
+        <input
+          type="text"
+          name=""
+          id="title"
+          placeholder="Entrez le titre de votre article"
+        />
+        <label for="Intro">Introduction</label>
+        <textarea
+          name=""
+          id="introduction"
+          cols="65"
+          rows="10"
+          placeholder="Entrez l'introduction de votre article"
+        ></textarea>
+        <label for="Contenu">Contenu</label>
+        <textarea
+          name=""
+          id="content"
+          cols="65"
+          rows="20"
+          placeholder="Tapez votre article"
+        ></textarea>
+        <label for="image">Ajoutez une image</label>
+        <input
+          type="text"
+          name=""
+          id="image"
+          placeholder="Copier l'url de votre image ici"
+        />
+        <label for="">Votre nom</label>
+        <input type="text" name="" id="author" placeholder="Tapez votre nom" />
+        <label for="">Date</label>
+        <input type="text" id="date" placeholder="Tapez la date" />
+        <label for="">Grande Catégorie</label>
+        <select name="" id="bigCategory">
+          <option value="Société">Société</option>
+          <option value="Sport">Sport</option>
+          <option value="Lifestyle">Lifestyle</option>
+          <option value="Voyage">Voyage</option>
+        </select>
+        <label for="">Sous Catégorie</label>
+        <select name="" id="subCategory">
+          <optgroup label="Société">
+            <option value="Economie">Economie</option>
+            <option value="Education">Education</option>
+            <option value="Santé">Santé</option>
+            <option value="Justice">Justice</option>
+          </optgroup>
+          <optgroup label="Sport">
+            <option value="Rugby">Rugby</option>
+            <option value="Football">Football</option>
+            <option value="Sport-Outdoor">Sport-Outdoor</option>
+            <option value="Sport-Urbain">Sport-Urbain</option>
+          </optgroup>
+          <optgroup label="Lifestyle">
+            <option value="Gastronomie">Gastronomie</option>
+            <option value="Representation-culturel"
+              >Représentation culturel</option
+            >
+            <option value="Mode">Mode</option>
+            <option value="Evènment">Evènement</option>
+          </optgroup>
+          <optgroup label="Voyage">
+            <option value="Bon-plan-Europe">Bon plan Europe</option>
+            <option value="Bon-plan-Amerique">Bon plan Amérique</option>
+            <option value="Bon-plan-Asie">Bon plan Asie</option>
+            <option value="Bon-plan-Afrique">Bon plan Afrique</option>
+            <option value="Bon-plan-Oceanie">Bon plan Océanie</option>
+          </optgroup>
+        </select>
+        <label for="">Numéro de l'article</label>
+        <input
+          type="number"
+          id="numArticle"
+          placeholder="Tapez le numéro de l'article"
+        />
+        <button id="bouton-publier" onclick="addToLocalStorage()">
+          Publier
+        </button>
+      </fieldset>
+    </section>
+    <footer class="menu">
+      <div>
+        <ul class="liensFooter">
+          <li><a href="">Qui sommes nous</a></li>
+          <li><a href="reelcontact.html">Nous contacter</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Recrutement</a></li>
+          <li><a href="">Mentions légale</a></li>
+        </ul>
+      </div>
+      <div class="don">
+        <a href="">Faire un don</a>
+      </div>
+      <div class="rejoindre">
+        <p>Rejoignez nous !</p>
+        <a href="">
+          <img src="img/logofacebook.png" alt="Liens Facebook" width="20" />
+        </a>
+        <a href="">
+          <img src="img/logotwitter.png" alt="Liens twitter" width="20" />
+        </a>
+      </div>
+    </footer>
+    <script src="scriptBO.js"></script>
+    <script src="filter.js"></script>
+    <script src="scriptnavbar.js"></script>
+    <script type="text/javascript" src="Titre.js"></script>
+  </body>
+</html>

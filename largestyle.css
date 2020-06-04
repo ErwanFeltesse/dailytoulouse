@@ -1,0 +1,71 @@
+@media screen and (min-width: 961px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+  }
+
+  .feed {
+    display: block;
+    grid-column-start: 2;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .imgArticle {
+    float: left;
+    width: 30%;
+    margin-right: 30px;
+  }
+  .textArticle {
+    font-size: 1em;
+  }
+  .AuthorAndDate {
+    clear: both;
+  }
+
+  .menu {
+    display: block;
+  }
+  .section-menu {
+    display: block;
+    grid-column-start: 1;
+    border-radius: 10px;
+  }
+  .foot {
+    display: none;
+  }
+  footer {
+    display: block;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    border-radius: 10px;
+  }
+  .backOffice {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+
+    grid-column-start: 3;
+    grid-row-start: 1;
+    margin-top: 140px;
+  }
+  .champs {
+    text-align: center;
+  }
+  .champs input {
+    width: 50%;
+  }
+  label {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  /*Style Contact page*/
+
+  .contactPage {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+  }
+}

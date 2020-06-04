@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="smallstyle.css" />
+    <link rel="stylesheet" href="mediumstyle.css" />
+    <link rel="stylesheet" href="largestyle.css" />
+    <title>contact</title>
+    <title>title</title>
+    <script
+      src="https://kit.fontawesome.com/f0ba7bc94b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f0ba7bc94b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="vierge">
+    <header>
+      <nav class="navbar">
+        <div class="boutton-menu">
+          <label for="menu-box" id="bouttonMenu">
+            <img class="burger" src="img/burger.png" alt="burger" />
+          </label>
+          <img src="img/logo.jpg" alt="logo" />
+        </div>
+        <div class="titrepage">
+          <h1 class="titrepagesmall">DT</h1>
+          <h1 class="titrepagelarge">
+            <span class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters">DAILY TOULOUSE</span>
+              <span class="line line2"></span>
+            </span>
+          </h1>    
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>  
+        </div>
+        <div class="recherche-profil">
+          <div class="recherche-box">
+            <input
+              type="text"
+              placeholder="recherche..."
+              id="search"
+              class="recherche-txt"
+            />
+            <a href="#" class="search recherche-btn">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <img class="avatar" src="https://i.pravatar.cc/300" alt="avatar" />
+        </div>
+      </nav>
+      <div class="timer">
+        <span id="dateFr"></span> <span id="horloge"></span>
+       </div>
+    </header>
+    <section class="contactPage">
+        <div class="presentation">
+          <h2 class="articleTitle">Qui sommes-nous?</h2>
+          <article class="presentation-team">  
+            <h3 class="articleTitle">Thierry</h3>
+            <img src="https://img.icons8.com/dotty/100/000000/person-male.png" alt="Avatar personne homme">
+            <p class="textArticle">Notre doyen, c'est la force tranquille du groupe. Il ne parle pas beaucoup mais il envoie du code!</p>
+          </article>
+          <article class="presentation-team">  
+            <h3 class="articleTitle">Erwan</h3>
+            <img src="https://img.icons8.com/dotty/100/000000/person-male.png" alt="Avatar personne homme">
+            <p class="textArticle">L'artiste. Pour de la prose inventive ou du café 1er prix c'est lui.</p>
+          </article>
+          <article class="presentation-team">  
+            <h3 class="articleTitle">Anthony</h3>
+            <img src="https://img.icons8.com/dotty/100/000000/person-male.png" alt="Avatar personne homme">
+            <p class="textArticle">Trouve des solutions aux problèmes. Mais seulement la nuit ou entre midi et deux.</p>
+          </article>
+          <article class="presentation-team">  
+            <h3 class="articleTitle">Benjamin</h3>
+            <img src="https://img.icons8.com/dotty/100/000000/person-male.png" alt="Avatar personne homme">
+            <p class="textArticle">Besoin de faire bugger Git? appelez le.</p>
+          </article>
+        </div>
+        <hr class="hr">
+        <br />
+        <div class="contact">
+          <h2 class="articleTitle">Nous contacter</h2>
+          <p class="textArticle">Vous venez d'ouvrir votre enseigne ou vous voulez promouvoir votre activité sur Toulouse et sa région ?</p>
+          <p class="textArticle">Vous voulez nous rejoindre ? Ca tombe bien nous embauchons des bénévoles !</p>
+          <p class="textArticle">Un simple avis ou commentaire ?</p>
+          <p class="textArticle">Contactez nous !</p>
+        </div>
+        <form action="" method="get" class="form-container" id="myForm">
+          <div class="form-contact">
+            <label for="name">Name :</label>
+            <input class="inputsize" type="text" name="name" id="name" required>
+            <span class="tooltip">Un nom ne peut faire moins de 3 caractères.</span>
+          </div>
+          <div class="form-contact">
+            <label for="emailinput">Email :</label>
+            <input class="inputsize" type="text" name="email" id="email" placeholder="      @gmail.com" required>
+            <span class="tooltip">Merci d'indiquer votre email.</span>
+          </div>
+          <div class="message">
+            <textarea name="votreMessage" id="votreMessage" cols="50" rows="10" placeholder="Dites nous."></textarea>
+            <span class="tooltip">Merci d'être un peu plus précis sur votre demande.</span>
+          </div>
+          <div class="send-button">
+            <input id="submit" type="submit" value="Envoyer">
+          </div>
+        </form>
+      </div>
+      </section>
+  
+    <section class="section-menu">
+      <input type="checkbox" id="menu-box" />
+      <ul class="menu">
+        <li><a href="acceuil.html" class="grostitre">A la une</a></li>
+        <li>
+          <a href="#sous-titre-societe" class="grostitre" id="titreSociete"
+            >Société</a
+          >
+          <ul class="sous-titre" id="sous-titre-societe">
+            <li>
+              <a href="">Economie</a>
+            </li>
+            <li>
+              <a href="">Education</a>
+            </li>
+            <li>
+              <a href="">Santé</a>
+            </li>
+            <li>
+              <a href="">Justice</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#sous-titre-sport" class="grostitre" id="titreSport"
+            >Sport</a
+          >
+          <ul class="sous-titre" id="sous-titre-sport">
+            <li>
+              <a href="">Rugby</a>
+            </li>
+            <li>
+              <a href="">Football</a>
+            </li>
+            <li>
+              <a href="">Sport-Outdoor</a>
+            </li>
+            <li>
+              <a href="">Sport-Urbain</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#sous-titre-lifestyle" class="grostitre" id="titreLifestyle"
+            >Lifestyle</a
+          >
+          <ul class="sous-titre" id="sous-titre-lifestyle">
+            <li>
+              <a href="">Gastronomie</a>
+            </li>
+            <li>
+              <a href="">Représentation culturel</a>
+            </li>
+            <li>
+              <a href="">Mode</a>
+            </li>
+            <li>
+              <a href="">Evènement</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#sous-titre-voyage" class="grostitre" id="titreVoyage"
+            >Voyage</a
+          >
+          <ul class="sous-titre" id="sous-titre-voyage">
+            <li>
+              <a href="">Bon plan Europe</a>
+            </li>
+            <li>
+              <a href="">Bon plan Amérique</a>
+            </li>
+            <li>
+              <a href="">Bon plan Asie</a>
+            </li>
+            <li>
+              <a href="">Bon plan Afrique</a>
+            </li>
+            <li>
+              <a href="">Bon plan Océanie</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="footer-flex-menu">
+            <ul>
+              <li><a href="">Qui sommes nous</a></li>
+              <li><a href=".reelcontact.html">Nous contacter</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Recrutement</a></li>
+              <li><a href="">Mentions légale</a></li>
+              <li>
+                <a href="">Faire un don</a>
+              </li>
+              <li class="flex-rejoindre">
+                <p>Rejoignez-nous !</p>
+                <a href=""
+                  ><img src="img/logofacebook.png" alt="Liens Facebook"
+                /></a>
+                <img src="img/logotwitter.png" alt="Liens twitter" />
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <footer class="menu">
+      <div>
+        <ul class="liensFooter">
+          <li><a href="">Qui sommes nous</a></li>
+          <li><a href=".reelcontact.html">Nous contacter</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Recrutement</a></li>
+          <li><a href="">Mentions légale</a></li>
+        </ul>
+      </div>
+      <div class="don">
+        <a href="">Faire un don</a>
+      </div>
+      <div class="rejoindre">
+        <p>Rejoignez nous !</p>
+        <a href="">
+          <img src="img/logofacebook.png" alt="Liens Facebook" width="20" />
+        </a>
+        <a href="">
+          <img src="img/logotwitter.png" alt="Liens twitter" width="20" />
+        </a>
+      </div>
+    </footer>
+    <script src="featureJScontact.js" ></script>
+    <script type="text/javascript" src="Titre.js"></script> 
+  </body>
+</html>
